@@ -9,7 +9,7 @@ SET "modelnum=%target1:~0,-8%"
 echo %modelnum%
 
 xcopy C:\temp\%modelnum%\* \\%target%\c$\temp\%modelnum% /i
-PsExec.exe \\%target% cmd /c "powershell.exe -executionpolicy bypass -windowstyle hidden -noninteractive -nologo -file C:\temp\%modelnum%\Dell.ps1 && DEL C:\temp\%modelnum%\Dell.ps1"
+PsExec.exe \\%target% cmd /c "powershell.exe -executionpolicy bypass -windowstyle hidden -noninteractive -nologo -file C:\temp\%modelnum%\Dell.ps1 -modelnum %modelnum% && DEL C:\temp\%modelnum%\Dell.ps1"
 
 :FIN
 PAUSE
