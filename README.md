@@ -3,7 +3,7 @@
 ## Prerequisites
 
 This script assumes...
-1. the validity of local path C:\temp\{model number}
+1. the validity of local path C:\temp\\{model number}
 2. the accessibility of c$ administrative share on remote host
 3. the presence of all Dell Update Packages (DUP) and Dell.ps1 at local path C:\temp\{model number}
 
