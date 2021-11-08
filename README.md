@@ -1,4 +1,4 @@
-# psexec-point-and-fire
+# point-n-update
 
 This tool allows for the remote administration of Dell system updates to a remote host via PsExec.
 
